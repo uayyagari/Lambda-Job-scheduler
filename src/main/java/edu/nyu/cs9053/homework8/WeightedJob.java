@@ -10,8 +10,7 @@ public class WeightedJob extends AbstractJob {
     public WeightedJob(int startTime, int endTime, int cost){
         super(startTime, endTime);
         if(cost < 0){ throw new IllegalArgumentException("start time can't be greater than end time");}
-            this.cost = cost;
-    }
+        this.cost = cost;
 
     public int getCost(){
         return cost;
